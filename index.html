@@ -11,73 +11,60 @@
 <body>
     <!-- Header -->
     <header>
-        <div>
-            <h1 style="text-align: center;">
+        <div class="header-container">
+            <h1 class="logo-title">
                 <img src="./pic_bulboff.gif" alt="logo" width="30">
                 Shankar's Website
                 <img src="./2pic_bulbon.gif" alt="logo" width="30">
             </h1>
-            <br>
-            <table>
-                <tr>
-                    <th><a href="#home">Home</a></th>
-                    <th><a href="#about">About</a></th>
-                    <th><a href="#skills">Skills</a></th>
-                    <th><a href="#projects">Projects</a></th>
-                    <th><a href="#contact">Contact</a></th>
-                </tr>
-            </table>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <hr>
+
     <!-- Home -->
-    <section id="home">
-
+    <section id="home" class="section-padding">
         <h2>Hi, I'm Shankar 👋</h2>
-
         <h3>I'm learning Frontend Development</h3>
-
         <p>
             Welcome to my personal website. I'm learning how to create
             modern, simple and responsive websites using HTML and CSS.
         </p>
-
         <p>
             My goal is to become a skilled web developer and build
             useful websites that look good on every device.
         </p>
-
-        <a href="#projects">View My Projects</a>
-        <hr>
+        <a href="#projects" class="btn">View My Projects</a>
     </section>
 
     <!-- About -->
-
-    <section id="about">
+    <section id="about" class="section-padding">
         <h2>About Me</h2>
-
         <p>
             Hello! My name is Shankar. I'm currently learning web
             development and improving my HTML and CSS skills.
         </p>
-
         <p>
             I enjoy creating websites, experimenting with different
             designs and learning new things about technology.
         </p>
-
         <p>
             Right now, I'm focusing on building a strong foundation
             in frontend development.
         </p>
     </section>
-    <hr>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section-padding">
         <h2>My Skills</h2>
-
-        <ul>
+        <ul class="skills-list">
             <li>HTML5</li>
             <li>CSS</li>
             <li>Responsive Web Design</li>
@@ -85,89 +72,83 @@
             <li>SEO</li>
         </ul>
     </section>
-    <hr>
 
     <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <br>
-        <h3>Personal website</h3>
-        <br>
-        <p>
-            A personal portfolio website where I can introduce
-            myself and showcase my skills and projects.
-        </p>
-        <br>
-
-        <p><strong>Technologies:</strong>HTML, CSS</p>
-
-        <a href="#">View Project</a>
+    <section id="projects" class="section-padding">
+        <h2> My Projects</h2>
+        <div class="project-card">
+            <h3>Personal Website</h3>
+            <p>
+                A personal portfolio website where I can introduce
+                myself and showcase my skills and projects.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS</p>
+            <a href="#" class="btn-secondary">View Project</a>
+        </div>
     </section>
-    <hr>
-
 
     <!-- Why Me -->
-    <section id="Learning-Web-Development">
-
+    <section id="Learning-Web-Development" class="section-padding">
         <h2>Why I'm Learning Web Development</h2>
-
         <p>
             I want to learn how websites are built from scratch and
             eventually create professional websites for real users.
         </p>
-
         <p>
             I'm currently practicing by building small projects and
             improving my design and coding skills every day.
         </p>
     </section>
-    <hr>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section-padding">
         <h2>Contact Me</h2>
-
         <p>
             If you want to connect with me or talk about web development,
             feel free to contact me.
         </p>
-
         <p>
-            <strong>Email:</strong> shankarsaini8107@gmail.com
+            <strong>Email:</strong> <a href="mailto:shankarsaini8107@gmail.com">shankarsaini8107@gmail.com</a>
         </p>
-
         <p>
-            <strong>Linkdin:</strong>
-            <a href="https://www.linkedin.com/in/shankar-saini/">linkedin.com/in/shankar-saini</a>
-            
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/shankar-saini/" target="_blank">linkedin.com/in/shankar-saini</a>
         </p>
     </section>
-    <hr>
-    <div>
-        <h2> Contact me </h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <br>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="msg"></textarea>
-            <br>
-            <label for="tel">Phone no.</label>
-            <input type="tel" id="Phone" name="phone no.">
-            <br>
-            <label for="text">About you</label>
-            <input type="text" id="About you" name="About you">
-            <button type="submit">Submit</button>
+
+    <!-- Contact Form Section -->
+    <section class="form-section section-padding">
+        <h2>Send a Message</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="msg" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="Phone">Phone no:</label>
+                <input type="tel" id="Phone" name="phone_no">
+            </div>
+            <div class="form-group">
+                <label for="About_you">About you:</label>
+                <input type="text" id="About_you" name="about_you">
+            </div>
+            <button type="submit" class="btn">Submit</button>
         </form>
-        <img src="shnankar's website image.jpg" alt="shankar-saini-IMAGE" width="1425px">
-        <footer>
-            <p>© 2026 Shankar. All rights reserved.</p>
-            <p>Made with HTML & CSS ❤️</p>
-        </footer>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Shankar. All rights reserved.</p>
+        <p>Made with HTML & CSS ❤️</p>
+    </footer>
 
 </body>
-
 </html>
