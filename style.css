@@ -94,6 +94,14 @@ nav {
     text-align: center;
 }
 
+#home h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
 #home h2::after {
     left: 50%;
     transform: translateX(-50%);
